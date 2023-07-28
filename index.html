@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>かなしみ</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background-color: #060000;
+			font-family: cursive;
+		}
+		a{
+			text-decoration: none;
+		}
+		ul{
+			list-style: none;
+		}
+		.header{
+			position: sticky;
+			top: 0;
+		}
+		.header:hover{
+			background: #060000;
+		}
+		.logo{
+			color: darkred;
+			font-size: 25px;
+			margin: 10px;
+			text-shadow: 0 0 0.7em #F87, 0 0 0.7em #F87;
+		}
+		.menu a{
+			display: block;
+			font-size: 20px;
+			margin: 5px;
+			margin-right: 20px;
+			padding: 10px;
+			color: white;
+		}
+		.nav{
+        	max-height: none;
+        	top: 0;
+        	position: relative;
+        	display: inline-block;
+        	width: fit-content;
+        	background-color: transparent;
+    	}
+    	.menu li{
+        	float: left;
+    	}
+		/* Responsiveness */
+		@media (min-width: 768px) {
+    	.nav{
+        	max-height: none;
+        	top: 0;
+        	position: relative;
+        	display: inline-block;
+        	width: fit-content;
+        	background-color: transparent;
+    	}
+    	.menu li{
+        	float: left;
+    	}
+    	.menu a:hover{
+        	color: white;
+        	background: #570000;
+        	border-radius: 5px 35px;
+        	}
+        }
+        #home{
+        	margin: 0;
+        	padding: 0;
+        }
+        #home .filter{
+        	background-image: url('back.png');
+        	background-repeat: no-repeat;
+        	background-size: cover;
+        	width: 100%;
+        	height: 90vh;
+        }
+        .home-text{
+        	color: white;
+        	padding: 10%;
+        	font-size: 20px;
+        	font-family: sans-serif;
+        	text-align: center;
+        	text-shadow: 0 0 1.9em #F87, 0 0 1.9em #F87
+        }
+        .home-text h1{
+        	padding: 20px;
+        }
+        .svg{
+        	display: inline-block;
+        	padding: 30px 20px 20px;
+        	height: 35px;
+        }
+        svg:hover{
+        	fill: red;
+        }
+        svg g:hover{
+        	fill: red;
+        }
+        main{
+        	background: #060000;
+        	width: 100%;
+        	height: 110vh;
+        }
+        .main-text{
+        	text-align: center;
+        	padding: 100px;
+        	color: white;
+        	font-size: 20px;
+        	font-family: sans-serif;
+        	text-shadow: 0 0 2.0em #F87, 0 0 0.1em #F87;
+        }
+        .allcontainer{
+        	display: flex;
+        	justify-content: center;
+        }
+        .container{
+        	background: #040000;
+        	width: 50%;
+        	margin: 10px;
+        	border-radius: 15px 0px;
+        	color: #A70000;
+        	text-align: center;
+        }
+        .container-box img{
+        	width: 100%;
+        	border-radius: 15px 0px;
+        }
+        .allcontainer .container .container-box a{
+        	border: 1px solid #A70000;
+        	color: darkred;
+        	display: block;
+        	border-radius: 15px 0px;
+        	margin-top: 20px;
+        	padding: 10px 0;
+        	text-align: center;
+        	transition: 100ms all linear 0s;
+        	width: 100%;
+        }
+        .allcontainer .container .container-box a:hover{
+        	color: white;
+        	background: #A70000;
+        }
+        #contato{
+        	color: white;
+        	text-align: center;
+        	align-items: center;
+        	padding: 100px;
+        	font-size: 20px;
+        	font-family: sans-serif;
+        	text-shadow: 0 0 2.0em #F87, 0 0 0.1em #F87;
+        }
+        @media (min-width: 680px) {
+        	.container{
+        		width: 20%;
+    	}
+    }
+    footer a{
+    	color: white;
+    	margin: 20px;
+    	padding: 10px;
+    	font-family: sans-serif;
+    }	
+	</style>
+</head>
+<body>
+
+		<div id="home">
+			<div class="filter">
+					<header class="header" align="center">
+						
+						<nav class="nav">
+							<a href="#" class="logo">かなしみ</a>
+							<ul class="menu">
+								<li><a href="#projects">Projetos</a></li>
+								<li><a href="#contato">Contato</a></li>
+							</ul>
+						</nav>
+					</header>
+				<div class="home-text">
+					<h1>Kayq F. Duarte</h1>
+					<p>Jovem estudante de programação, com 17 anos de idade. Possuo paixão pelo desenvolvimento de jogos Indie, além de um profundo interesse por animes, jogos e mangás. Além disso, a leitura é uma atividade que aprecio muito.</p>
+					<div class="svg">
+						<a href="https://github.com/kayqfernandes"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" class="bi bi-github" viewBox="0 0 16 16">
+  							<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+						</svg></a>
+						<a href="wa.me/+5561999045131"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill:#000000;">
+							<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,3c-6.627,0 -12,5.373 -12,12c0,2.25121 0.63234,4.35007 1.71094,6.15039l-1.60352,5.84961l5.97461,-1.56836c1.74732,0.99342 3.76446,1.56836 5.91797,1.56836c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM10.89258,9.40234c0.195,0 0.39536,-0.00119 0.56836,0.00781c0.214,0.005 0.44692,0.02067 0.66992,0.51367c0.265,0.586 0.84202,2.05608 0.91602,2.20508c0.074,0.149 0.12644,0.32453 0.02344,0.51953c-0.098,0.2 -0.14897,0.32105 -0.29297,0.49805c-0.149,0.172 -0.31227,0.38563 -0.44727,0.51563c-0.149,0.149 -0.30286,0.31238 -0.13086,0.60938c0.172,0.297 0.76934,1.27064 1.65234,2.05664c1.135,1.014 2.09263,1.32561 2.39063,1.47461c0.298,0.149 0.47058,0.12578 0.64258,-0.07422c0.177,-0.195 0.74336,-0.86411 0.94336,-1.16211c0.195,-0.298 0.39406,-0.24644 0.66406,-0.14844c0.274,0.098 1.7352,0.8178 2.0332,0.9668c0.298,0.149 0.49336,0.22275 0.56836,0.34375c0.077,0.125 0.07708,0.72006 -0.16992,1.41406c-0.247,0.693 -1.45991,1.36316 -2.00391,1.41016c-0.549,0.051 -1.06136,0.24677 -3.56836,-0.74023c-3.024,-1.191 -4.93108,-4.28828 -5.08008,-4.48828c-0.149,-0.195 -1.21094,-1.61031 -1.21094,-3.07031c0,-1.465 0.76811,-2.18247 1.03711,-2.48047c0.274,-0.298 0.59492,-0.37109 0.79492,-0.37109z"></path></g></g>
+						</svg></a>
+						<a href="https://kanashimidevil.itch.io/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256" style="fill:#000000;">
+							<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,4c-3.362,0 -7.94509,0.05377 -8.87109,0.13477c-1.047,0.621 -3.10891,2.76472 -3.12891,3.38672v1.0293c0,1.304 1.21822,2.44922 2.32422,2.44922c1.329,0 2.4375,-1.1012 2.4375,-2.4082c0,1.307 1.06748,2.4082 2.39648,2.4082c1.329,0 2.36523,-1.1012 2.36524,-2.4082c0,1.307 1.13584,2.4082 2.46484,2.4082h0.02539c1.329,0 2.46484,-1.1012 2.46484,-2.4082c0,1.307 1.03528,2.4082 2.36328,2.4082c1.329,0 2.39844,-1.1012 2.39844,-2.4082c0,1.307 1.10655,2.4082 2.43555,2.4082c1.105,0 2.32422,-1.14522 2.32422,-2.44922v-1.0293c-0.02,-0.621 -2.08191,-2.76572 -3.12891,-3.38672c-3.254,-0.115 -5.50909,-0.13477 -8.87109,-0.13477zM12.48438,11.63672c-0.127,0.221 -0.28475,0.42356 -0.46875,0.60156c-0.502,0.49 -1.18927,0.79492 -1.94727,0.79492c-0.729,0.001 -1.43017,-0.28492 -1.95117,-0.79492c-0.182,-0.178 -0.31931,-0.36784 -0.44531,-0.58984c-0.126,0.222 -0.30333,0.41084 -0.48633,0.58984c-0.521,0.51 -1.22217,0.79592 -1.95117,0.79492c-0.091,0 -0.18472,-0.02573 -0.26172,-0.05273c-0.107,1.112 -0.13048,1.56094 -0.14648,2.33594v0.00391c-0.002,0.394 -0.00386,0.71797 -0.00586,1.16797c0.021,2.334 -0.2307,7.56461 1.0293,8.84961c1.953,0.454 5.54539,0.66111 9.15039,0.66211c3.605,-0.001 7.19739,-0.20906 9.15039,-0.66406c1.26,-1.285 1.0083,-6.51661 1.0293,-8.84961c-0.002,-0.45 -0.00386,-0.77201 -0.00586,-1.16602v-0.00391c-0.016,-0.775 -0.08245,-1.22394 -0.18945,-2.33594c-0.077,0.026 -0.17267,0.05078 -0.26367,0.05078c-0.729,0.001 -1.43017,-0.28297 -1.95117,-0.79297c-0.182,-0.178 -0.35738,-0.36784 -0.48437,-0.58984h-0.00195c-0.127,0.222 -0.26431,0.41184 -0.44531,0.58984c-0.521,0.51 -1.22217,0.79492 -1.95117,0.79492c-0.758,0 -1.44527,-0.30392 -1.94727,-0.79492c-0.183,-0.178 -0.3388,-0.38056 -0.4668,-0.60156c-0.126,0.221 -0.28189,0.42356 -0.46289,0.60156c-0.521,0.51 -1.22217,0.79492 -1.95117,0.79492c-0.026,0 -0.05408,-0.00095 -0.08008,-0.00195c-0.026,0.001 -0.05308,0.00195 -0.08008,0.00195c-0.729,0.001 -1.43017,-0.28492 -1.95117,-0.79492c-0.182,-0.178 -0.33789,-0.38056 -0.46289,-0.60156zM10.9668,14.64453v0.00195c0.712,0.001 1.34491,0.00047 2.12891,0.85547c0.61638,-0.06493 1.25995,-0.09859 1.9043,-0.09766h0.00195c0.64434,-0.00093 1.28792,0.03272 1.9043,0.09766c0.784,-0.855 1.41495,-0.85447 2.12695,-0.85547h0.00195v-0.00195c0.336,0 1.68214,-0.00019 2.61914,2.63281l1.00586,3.61328c0.746,2.687 -0.2388,2.75191 -1.4668,2.75391c-1.822,-0.068 -2.83008,-1.38989 -2.83008,-2.71289c-1.009,0.165 -2.18433,0.24805 -3.36133,0.24805c-1.177,0 -2.35528,-0.08305 -3.36328,-0.24805c0,1.323 -1.00808,2.64489 -2.83008,2.71289c-1.229,-0.002 -2.21475,-0.06691 -1.46875,-2.75391l1.00781,-3.61328c0.937,-2.633 2.28214,-2.63281 2.61914,-2.63281zM15,16.63281c-0.001,0.002 -1.62502,1.49344 -1.91602,2.02344l1.0625,-0.04297v0.92578c0,0.043 0.42752,0.02781 0.85352,0.00781c0.427,0.02 0.85352,0.03519 0.85352,-0.00781v-0.92578l1.0625,0.04297c-0.291,-0.531 -1.91602,-2.02344 -1.91602,-2.02344z"></path></g></g>
+						</svg></a>
+						<a href="https://codepen.io/Kayq"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256" style="fill:#000000;">
+							<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,4l-21,13.34375v15.30859l21,13.34766l21,-13.34375v-15.3125zM25,29.18359l-5.93359,-4.11328l5.93359,-4.04687l5.93359,4.04688zM27,17.60547v-7.65625l13.42969,8.53516l-6.01953,4.17188zM23,17.60547l-7.41016,5.05078l-6.01953,-4.17187l13.42969,-8.53516zM12.09375,25.04297l-4.09375,2.78906v-5.62891zM15.57031,27.45313l7.42969,5.15234v7.44531l-13.41016,-8.52344zM27,32.60547l7.42969,-5.15234l5.98047,4.07422l-13.41016,8.52344zM37.90625,25.04297l4.09375,-2.83984v5.62891z"></path></g></g>
+						</svg></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<main>
+		<div class="main-text" id="projects">
+			<h1>Meus Projetos</h1>
+			<p>Aqui está alguns de meus projetos, Espero que goste!</p>
+		</div>
+		<div class="allcontainer">
+			<div class="container">
+				<div class="container-box">
+					<img src="https://img.itch.zone/aW1nLzExNzk4MzcyLnBuZw==/180x143%23c/ulRQ5d.png">
+					<p>Um jogo simples 2D, Usando a linguagem GdScript, Que é um phyton dinamico.</p>
+					<a href="https://kanashimidevil.itch.io/the-yume-doll">Ver-Mais</a>
+				</div>
+			</div>
+				</div>
+			</div>
+		</div><br><br><br><br>
+		<div id="contato">
+			<h1>Contato</h1>
+			<p>Entre em contato comigo pelo discord.</p><br>
+			<a href="wa.me/+5561999045131"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill:#000000;">
+					<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,3c-6.627,0 -12,5.373 -12,12c0,2.25121 0.63234,4.35007 1.71094,6.15039l-1.60352,5.84961l5.97461,-1.56836c1.74732,0.99342 3.76446,1.56836 5.91797,1.56836c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM10.89258,9.40234c0.195,0 0.39536,-0.00119 0.56836,0.00781c0.214,0.005 0.44692,0.02067 0.66992,0.51367c0.265,0.586 0.84202,2.05608 0.91602,2.20508c0.074,0.149 0.12644,0.32453 0.02344,0.51953c-0.098,0.2 -0.14897,0.32105 -0.29297,0.49805c-0.149,0.172 -0.31227,0.38563 -0.44727,0.51563c-0.149,0.149 -0.30286,0.31238 -0.13086,0.60938c0.172,0.297 0.76934,1.27064 1.65234,2.05664c1.135,1.014 2.09263,1.32561 2.39063,1.47461c0.298,0.149 0.47058,0.12578 0.64258,-0.07422c0.177,-0.195 0.74336,-0.86411 0.94336,-1.16211c0.195,-0.298 0.39406,-0.24644 0.66406,-0.14844c0.274,0.098 1.7352,0.8178 2.0332,0.9668c0.298,0.149 0.49336,0.22275 0.56836,0.34375c0.077,0.125 0.07708,0.72006 -0.16992,1.41406c-0.247,0.693 -1.45991,1.36316 -2.00391,1.41016c-0.549,0.051 -1.06136,0.24677 -3.56836,-0.74023c-3.024,-1.191 -4.93108,-4.28828 -5.08008,-4.48828c-0.149,-0.195 -1.21094,-1.61031 -1.21094,-3.07031c0,-1.465 0.76811,-2.18247 1.03711,-2.48047c0.274,-0.298 0.59492,-0.37109 0.79492,-0.37109z"></path></g></g>
+				</svg></a></a><br><br><br><br><br><br><br><br>
+		</div>
+		<footer align="center">
+			<a href="#">© 2023 Kayq Todos Direitos reservados.</a>
+		</footer>
+	</main>
+</body>
+</html>
